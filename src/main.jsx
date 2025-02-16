@@ -43,6 +43,8 @@ const router = createBrowserRouter([
   },
 ]);
 
+document.title = "RodMP";
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
