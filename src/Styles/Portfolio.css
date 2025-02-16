@@ -1,0 +1,42 @@
+.page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  color: #FEF9EF;
+}
+
+.flex-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.readme-generator {
+  background-image: url(https://camo.githubusercontent.com/6f906badc2831b486e15141c2bddda48bc304ccc3dda75f492195a0d615a3850/68747470733a2f2f63646e2e7261776769742e636f6d2f53426f7564726961732f496e7175697265722e6a732f323861653833333762613531643933653335396566346637656532346537396236393839383936322f6173736574732f73637265656e73686f74732f6c6973742e737667);
+  background-size: cover;
+  background-position: center;
+}
+
+.view-button{
+  background-color: var(--tertiary);
+  color: #000;
+  padding: 0.1rem 1rem;
+  border: var(--light) 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
