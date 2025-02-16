@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  :root {
+    --primary: #386641;
+    --secondary: #00d26a;
+    --tertiary: #3D5A80;
+    --dark: #102B3F;
+    --light: #FEF9EF;
+  }
+
+  html {
+    overflow-y: scroll;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 35px #92ccce66;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+  }
+
+  header h1 {
+    background-color: linear-gradient(90deg, var(--tertiary), var(--secondary));
+    background: linear-gradient(90deg, var(--tertiary), var(--secondary));
+    padding: 5px 1% 5px 6%;
+    color: var(--light);
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+    border-radius: 0px 15px 15px 0;
+    position: relative;
+    z-index: 1; 
+    text-shadow: 
+    -3px -3px 2px #000,  
+    3px -3px 2px #000,
+    -3px 3px 2px #000,
+    3px 3px 2px #000,
+    -2px -2px 2px #000,
+    2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px 2px 2px #000,
+    -1px -1px 2px #000,
+    1px -1px 2px #000,
+    -1px 1px 2px #000,
+    1px 1px 2px #000;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--dark);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--light) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+  }
+  
+  .nav-link {
+    color: var(--light);
+  }
+
+  .nav-link:hover {
+    color: var(--dark);
+  }
+  
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--light);
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  
+  .hero-banner {
+    background: var(--secondary);
+    background-image: url("https://img.lovepik.com/background/20211022/large/lovepik-green-geometric-background-image_401740858.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .hero-banner div {
+    flex: 0 0 90%;
+  }
+  
+  .hero-banner h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    align-self: center;
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .hero-banner img {
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px 2px #1f1d19bb;
+    border: 5px solid var(--tertiary);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-left: 10%;
+  }
+
+  .page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+  
+  .page-section p {
+    margin-bottom: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  
+  /* feature first portfolio item */
+  .flex-item:first-child {
+      max-height: 400px;
+      min-height: 150px;
+      flex: 1 1 100%;
+  }
+  
+  .flex-item:hover {
+    background-color: #0000004d;
+  }
+  
+  .flex-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+  
+  .contact-address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact-address a {
+    color: var(--tertiary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var (--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
+  
+  .contact-address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+  }
+  
+  footer {
+    color: var(--light);
+    background-color: var(--dark);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .crew-control {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6y-csQjEpI39qKKt2i7Aj32fe6VQQZ3bTUA&s);
+  
+  }
+  
+  .culinary-chronicles {
+    background-image: url(https://www.snapfish.com/blog/wp-content/uploads/2018/09/Screenshot_2.jpg);
+  }
+  
+  .craft-my-car {
+    background-image: url(https://drawingdatabase.com/wp-content/uploads/2014/04/%D0%A1hevrolet-Camaro.gif);}
+  
+  .weather-query {
+    background-image: url(https://news.stanford.edu/__data/assets/image/0021/83631/Unpredictable-weather.jpeg);}
+  
+   
+  /* media queries */
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex: 1 1 100%;
+      min-height: 150px;
+    }
+  }
+  
+  /* media queries for a max-width of 980px */
+  @media screen and (max-width: 980px) {
+    
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+      border-radius: 15px 15px 0px 0;
+      background: linear-gradient(360deg, var(--tertiary), var(--secondary));
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }

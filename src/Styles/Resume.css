@@ -1,0 +1,30 @@
+.page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-section {
+  margin-bottom: 2rem;
+}
+
+.page-section h2 {
+  min-width: 250px;
+  font-size: 3rem;
+}
+
+.page-section h1 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 0.2rem;
+}
+
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-address a {
+  margin-bottom: 0.5rem;
+}
